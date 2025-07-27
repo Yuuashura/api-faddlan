@@ -8,11 +8,9 @@ import fs from 'fs';
  * @param {import('@vercel/node').VercelResponse} res
  */
 export default function handler(req, res) {
-  // Tentukan path ke folder 'data'
   const dataPath = path.join(process.cwd(), 'data');
 
   try {
-    // Baca semua isi dari folder 'data'
     const allFilesAndFolders = fs.readdirSync(dataPath);
 
     // Saring hasilnya agar hanya mengambil folder (direktori)
