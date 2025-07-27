@@ -1,0 +1,16 @@
+{
+  "name": "api-server-bola",
+  "version": "1.0.0",
+  "description": "Server API lokal untuk data pertandingan sepak bola.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  }
+}
