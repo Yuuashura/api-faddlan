@@ -21,7 +21,17 @@ export default function handler(req, res) {
 
     // Kirim daftar folder sebagai respons JSON
     res.status(200).json({
-      documentation: "Endpoint ini menampilkan semua musim (tahun) yang tersedia. Gunakan format /api/{season}/{league}/{matchday} untuk mengambil data.",
+      documentation:[
+        {
+            Author : "@Yuuashura",
+            github: "https://github.com/Yuuashura",
+            contoh: [
+                "/api/2025/mls/1",
+                "/api/2010-11/at/1",
+                "/2011-12/en/1"
+            ]
+        }
+      ],
       available_seasons: folders
     });
 
